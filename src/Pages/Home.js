@@ -8,6 +8,7 @@ import Excercises from '../Comonents/Excercises';
 const Home = () => {
   const [bodyPart, setBodyPart] = useState('all');
   const [exercises, setExercises] = useState([]);
+
   return (
     <Box>
       <HeroBanner/>
@@ -18,8 +19,8 @@ const Home = () => {
       />
       <Excercises
         setExercises={setExercises}
+        exercises={exercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
       />
     </Box>
   )
