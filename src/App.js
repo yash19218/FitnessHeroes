@@ -6,7 +6,7 @@ import './App.css';
 import Navbar from './Comonents/Navbar';
 import Footer from './Comonents/Footer';
 import Home from './Pages/Home';
-import ExcerciseDetails from './Pages/ExcerciseDetails'; 
+import ExerciseDetails from './Pages/ExerciseDetails'; 
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}></Route>
-            <Route path="/excercise/:id" element={<ExcerciseDetails/>}></Route>
+            <Route path="/exercise/:id" element={<ExerciseDetails/>}></Route>
         </Routes>
         <Footer/>
     </Box>
