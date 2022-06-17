@@ -16,6 +16,7 @@ const ExcerciseDetails = () => {
 
   useEffect(()=>{
     const fetchExerciseData = async()=>{
+        window.scroll({top: 0,left:100,behavior:'smooth'});
         const exerciseDBUrl = 'https://exercisedb.p.rapidapi.com';
         const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
 
